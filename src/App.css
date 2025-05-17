@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.spankAnim {
+  animation: sparkUp 5s ease-in-out infinite;
+}
+
+.flame {
+  animation: flameMove 2s ease-in-out infinite;
+}
+
+@keyframes sparkUp {
+  0% {
+    bottom: 0%;
+    opacity: 1;
+    right: var(--xposition)
+  }
+  30% {
+    right: calc(var(--xposition) + var(--range))
+  }
+  60% {
+    opacity: 1;
+    right: calc(var(--xposition) - var(--range))
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+    right: calc(var(--xposition) + var(--range))
+  }
+}
+
+@keyframes flameMove {
+  0% {
+    left: var(--positionFlame)
+  }
+  50% {
+    left: calc(var(--positionFlame) + 40px)
+  }
+  100% {
+    left: var(--positionFlame);
+  }
+}
