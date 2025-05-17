@@ -1,11 +1,8 @@
 @import "tailwindcss";
 
-#root {
+/* #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+} */
 
 .spankAnim {
   animation: sparkUp 5s ease-in-out infinite;
@@ -18,8 +15,11 @@
 @keyframes sparkUp {
   0% {
     bottom: 0%;
-    opacity: 1;
+    opacity: 0;
     right: var(--xposition)
+  }
+  5% {
+    opacity: 1;
   }
   30% {
     right: calc(var(--xposition) + var(--range))
@@ -37,12 +37,20 @@
 
 @keyframes flameMove {
   0% {
-    left: var(--positionFlame)
+    left: var(--positionFlame);
+    bottom: var(--upFlame);
+  }
+  25% {
+    bottom: calc(var(--upFlame) - 5px);
   }
   50% {
-    left: calc(var(--positionFlame) + 40px)
+    left: calc(var(--positionFlame) + 40px);
+  }
+  75% {
+    bottom: calc(var(--upFlame) + 5px);
   }
   100% {
     left: var(--positionFlame);
+    bottom: var(--upFlame);
   }
 }
