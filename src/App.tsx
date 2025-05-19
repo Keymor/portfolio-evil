@@ -14,7 +14,7 @@ function App() {
   }, [])
 
   return (
-    <div className='flex flex-col w-screen'>
+    <div className='flex flex-col w-screen h-fit'>
       <Header />
       <div className='flex flex-col w-full sm:w-[1080px] h-[100svh] overflow-clip mx-auto relative'>
         <div className='flex flex-col gap-5 sm:gap-0 sm:flex-row w-full h-1/2 mt-[15%] p-[5%]'>
@@ -26,7 +26,7 @@ function App() {
           <Flame />
         </div>
       </div>
-      <div className='w-full h-[100svh]'>
+      <div className='w-full h-[50svh]'>
       </div>
     </div>
   )
