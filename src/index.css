@@ -20,3 +20,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+img path {
+  fill: rgb(194, 0, 0); 
+}
