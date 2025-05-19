@@ -2,7 +2,7 @@ import { useEffect, useState, type ReactElement } from "react";
 
 export default function Fire() {
   const [particles, setParticles] = useState<ReactElement[]>([]);
-  const xPosition = 50
+  const xPosition = 20
 
   useEffect(() => {
 
