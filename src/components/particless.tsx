@@ -25,7 +25,7 @@ export default function Fire() {
 
   return (
     <>
-      <div className='w-full h-full absolute'>
+      <div className='w-full h-[100svh] absolute'>
         {particles}
       </div>
     </>
