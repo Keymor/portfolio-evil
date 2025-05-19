@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 
 
 export default function Flame() {
-    const [scroll, setScroll] = useState(0)
+    // const [scroll, setScroll] = useState(0)
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const pxH = window.scrollY
-            const viewVH = window.innerHeight
-            const vH = (pxH / viewVH) * 100
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const pxH = window.scrollY
+    //         const viewVH = window.innerHeight
+    //         const vH = (pxH / viewVH) * 100
 
-            setScroll(Math.floor(vH * 2));
-            console.log(vH)
-        };
-        window.addEventListener("scroll", handleScroll);
-    }, [])
+    //         setScroll(Math.floor(vH * 2));
+    //         console.log(vH)
+    //     };
+    //     window.addEventListener("scroll", handleScroll);
+    // }, [])
 
     return (
         <div className="w-[1954px] relative">
