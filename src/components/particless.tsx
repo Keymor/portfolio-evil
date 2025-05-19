@@ -1,6 +1,6 @@
 export default function Fire() {
 
-  const xPosition = 100
+  const xPosition = 50
 
   const animationStart = () => {
 
@@ -21,7 +21,7 @@ export default function Fire() {
 
   return (
     <>
-      <div className='w-full h-full absolute inset-0 overflow-clip -z-3'>
+      <div className='w-full h-full absolute'>
         {animationStart()}
       </div>
     </>
