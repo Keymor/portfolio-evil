@@ -1,11 +1,14 @@
 interface svgProp {
-    svgColor: string
+    svgColor: string,
+    xPos: number,
+    yPos: number,
+    delay: number
 }
 
-const FlameSvg: React.FC<svgProp> = ({ svgColor })  => {
+const FlameSvg: React.FC<svgProp> = ({ svgColor, xPos, yPos, delay })  => {
     return (
         <svg style={{
-            '--upFlame': '100px', '--positionFlame': '60px', animationDuration: '3s'
+            '--upFlame': `${yPos}px`, '--positionFlame': `${xPos}px`, animationDuration: `${delay}s`
         } as React.CSSProperties} className='flame absolute inset-0 top-auto' version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="1954.000000pt" height="554.000000pt" viewBox="0 0 1954.000000 554.000000"
             preserveAspectRatio="xMidYMid meet">
