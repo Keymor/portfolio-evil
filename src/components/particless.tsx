@@ -1,10 +1,12 @@
-export default function Fire() {
+import { useEffect, useState, type ReactElement } from "react";
 
+export default function Fire() {
+  const [particles, setParticles] = useState<ReactElement[]>([]);
   const xPosition = 50
 
-  const animationStart = () => {
+  useEffect(() => {
 
-    const newArr = Array.from({length: xPosition}).map((_, index: number) => {
+    const newParticles = Array.from({length: xPosition}).map((_, index: number) => {
       return (
         <div key={index} style={{
           '--xposition': `${(Math.floor((Math.random() * 100)))}%`,
@@ -16,13 +18,15 @@ export default function Fire() {
         } as React.CSSProperties} className='size-5 rounded-full absolute bottom-1 spankAnim'/>
       )
     })
-    return newArr
-  }
+
+    setParticles(newParticles)
+    
+  }, [])
 
   return (
     <>
       <div className='w-full h-full absolute'>
-        {animationStart()}
+        {particles}
       </div>
     </>
   )

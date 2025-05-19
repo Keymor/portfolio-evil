@@ -1,12 +1,30 @@
+import { useEffect, useState } from 'react'
+
+
 export default function Flame() {
+    const [scroll, setScroll] = useState(0)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const pxH = window.scrollY
+            const viewVH = window.innerHeight
+            const vH = (pxH / viewVH) * 100
+
+            setScroll(Math.floor(vH * 2));
+            console.log(vH)
+        };
+        window.addEventListener("scroll", handleScroll);
+    }, [])
+
     return (
         <div className="w-[1954px] relative">
-            <div className="goUp">
+            <div style={{ transform: `translateY(-${scroll}vh)` }}>
                 <img style={{
                     '--upFlame': '0px', '--positionFlame': '0px', animationDuration: '1s'
                 } as React.CSSProperties}
                     src='/fire.png'
-                    className='w-[1954pxp] h-[554px] absolute inset-0 top-auto saturate-200 hue-rotate-55 brightness-200 -z-1 flame' />
+                    className='w-[1954pxp] h-[554px] absolute inset-0 top-auto saturate-200 hue-rotate-55 brightness-200 z-2 flame' />
+                <div className='w-full h-screen bg-amber-300 saturate-180 brightness-71 -translate-y-[20vh] absolute inset-0' />
             </div>
             <img style={{
                 '--upFlame': '50px', '--positionFlame': '-70px', animationDuration: '2s'
