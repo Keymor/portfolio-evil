@@ -16,9 +16,6 @@ body {
   animation: flameMove 2s ease-in-out infinite;
 }
 
-.svgF {
-  fill: red
-}
 
 @keyframes sparkUp {
   0% {
