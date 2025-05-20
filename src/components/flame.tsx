@@ -18,7 +18,7 @@ export default function Flame() {
     // }, [])
 
     return (
-        <div className="w-[1954px] relative">
+        <div className="w-full relative">
             <div>
                 <FlameSvg svgColor="#efc210" xPos={60} yPos={0} delay={1} index={1} scale={1}/>
             </div>
