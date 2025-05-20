@@ -12,7 +12,6 @@ export default function FlameBack() {
             const vH = (pxH / viewVH) * 100
 
             setScroll(Math.floor(vH));
-            console.log(vH)
         };
         window.addEventListener("scroll", handleScroll);
     }, [])
@@ -25,7 +24,7 @@ export default function FlameBack() {
             </div>
             <div style={{transform: `translateY(-${scroll * 3}svh)`}} className='z-0'>
                 <FlameSvg svgColor="#4a0000" xPos={-70} yPos={150} delay={4} index={-4} scale={-1}/>
-                <div className='bg-[#4a0000] absolute inset-0 -top-100 w-full h-[100vh]'/>
+                <div className='bg-[#4a0000] absolute inset-0 -top-107 w-full h-[100vh]'/>
             </div>
         </div>
     )

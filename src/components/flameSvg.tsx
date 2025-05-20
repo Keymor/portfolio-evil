@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+
 interface svgProp {
     svgColor: string,
     xPos: number,
@@ -8,10 +10,17 @@ interface svgProp {
 }
 
 const FlameSvg: React.FC<svgProp> = ({ svgColor, xPos, yPos, delay, index, scale })  => {
+    const [ySize, setYSize] = useState(Boolean)
+
+    useEffect(() => {
+        window.screen.availWidth > 650 ?
+        setYSize(true) :
+        setYSize(false) 
+    }, [window.screen.availWidth])
     return (
         <svg style={{
-            '--upFlame': `${yPos}px`, '--positionFlame': `${xPos}px`, animationDuration: `${delay}s`, zIndex: index, transform: `scaleX(${scale})`
-        } as React.CSSProperties} className='w-[400vw] sm:w-full flame absolute inset-0 top-auto' version="1.0" xmlns="http://www.w3.org/2000/svg"
+            '--upFlame': `${yPos}px`, '--positionFlame': `${xPos - (ySize ? 0 : 100) }px`, animationDuration: `${delay}s`, zIndex: index, transform: `scaleX(${scale})`
+        } as React.CSSProperties} className='w-[200%] sm:w-[100vw] flame absolute inset-0 top-auto' version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="1954.000000pt" height="554.000000pt" viewBox="0 0 1954.000000 554.000000"
             preserveAspectRatio="xMidYMid meet">
 

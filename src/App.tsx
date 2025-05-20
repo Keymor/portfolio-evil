@@ -15,7 +15,7 @@ function App() {
   }, [])
 
   return (
-    <div className='flex flex-col w-screen h-fit'>
+    <div className='flex flex-col w-screen h-fit overflow-clip'>
       <Header />
       <div className='flex flex-col w-full h-[100svh] mx-auto relative'>
         <div className='flex flex-col gap-5 sm:gap-0 sm:flex-row w-full sm:w-[1180px] h-3/5 mx-auto mt-[10%] p-[5%]'>

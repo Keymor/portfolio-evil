@@ -12,7 +12,6 @@ export default function Flame() {
             const vH = (pxH / viewVH) * 100
 
             setScroll(Math.floor(vH));
-            console.log(vH)
         };
         window.addEventListener("scroll", handleScroll);
     }, [])
