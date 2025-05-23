@@ -15,10 +15,10 @@ function App() {
   }, [])
 
   return (
-    <div className='flex flex-col w-screen h-fit overflow-clip'>
+    <div className='flex flex-col w-screen h-fit overflow-clip overflow-y-hidden'>
       <Header />
       <div className='flex flex-col w-full h-[100svh] mx-auto relative'>
-        <div className='flex flex-col gap-5 sm:gap-0 sm:flex-row w-full sm:w-[1180px] h-3/5 mx-auto mt-[10%] p-[5%]'>
+        <div className='flex flex-col gap-5 sm:gap-0 sm:flex-row w-full sm:w-[1180px] h-3/5 mx-auto mt-[25%] sm:mt-[10%] p-[5%]'>
           <img style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} src='mainText.png' className='mr-auto z-1' />
           <img style={{ animation: timer ? 'evil 1s ease-in-out infinite' : 'appearence 1.5s ease-in-out forwards' }} src='evil.png' className='ml-auto z-1' />
         </div>
