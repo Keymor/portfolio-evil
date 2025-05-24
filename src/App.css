@@ -16,6 +16,13 @@ body {
   animation: flameMove 2s ease-in-out infinite;
 }
 
+.blink {
+  animation: blink 3s linear infinite;
+}
+
+.blinkTwo {
+  animation: blink 4s linear infinite;
+}
 
 @keyframes sparkUp {
   0% {
@@ -129,5 +136,23 @@ body {
   100% {
     scale: 1;
     transform: translateY(0vh);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }  
+  10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
