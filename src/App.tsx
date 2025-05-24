@@ -4,6 +4,7 @@ import Fire from './components/particless'
 import Header from './components/header'
 import { useEffect, useState } from 'react'
 import FlameBack from './components/flameBack'
+import Skills from './components/skills'
 
 function App() {
   const [timer, setTimer] = useState(false)
@@ -30,7 +31,7 @@ function App() {
           <Flame />
         </div>
       </div>
-      <div className='w-full h-[100svh] bg-[#efc210] flex flex-col sm:flex-row items-start'>
+      <div className='w-full h-[50svh] bg-[#efc210] flex flex-col sm:flex-row items-start'>
         <div className='sm:translate-0 -translate-x-1/20 sm:ml-auto sm:mr-10 mx-auto size-auto z-10 relative hover:scale-110 duration-300 cursor-pointer'>
           <img src='/devil.svg' className='size-fit sm:size-[20svw]' />
           <img src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/10 right-2/8 blink delay-300' />
@@ -42,6 +43,7 @@ function App() {
           <h1 className=' absolute top-1/2 left-1/2 -translate-x-1/2 text-2xl font-bold whitespace-nowrap'>Project 2</h1>
         </div>
       </div>
+      <Skills />
     </div>
   )
 }
