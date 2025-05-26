@@ -1,8 +1,13 @@
 import { useEffect, useState, type ReactElement } from "react";
 
-export default function Fire() {
+interface ParticlesProp {
+  amount: number,
+  color: string
+}
+
+const Fire: React.FC<ParticlesProp> = ({amount, color}) => {
   const [particles, setParticles] = useState<ReactElement[]>([]);
-  const xPosition = 50
+  const xPosition = amount
 
   useEffect(() => {
 
@@ -13,7 +18,7 @@ export default function Fire() {
           '--range': `${Math.random() * (10 - -5) + -5}%`, 
           animationDelay: `${Math.random() * (3 - 1) + 1}s`, 
           animationDuration: `${Math.random() * (6 - 3) + 3}s`,
-          backgroundColor: `rgb(150, 25, 25, ${Math.random() * (1 - 0.3) + 0.3})`,
+          backgroundColor: `${color}, ${Math.random() * (1 - 0.3) + 0.3})`,
           scale: Math.random() * (0.8 - 0.1) + 0.1
         } as React.CSSProperties} className='size-5 rounded-full absolute bottom-1 spankAnim'/>
       )
@@ -31,3 +36,5 @@ export default function Fire() {
     </>
   )
 }
+
+export default Fire
