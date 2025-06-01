@@ -18,11 +18,11 @@ export default function Flame() {
 
     return (
         <div className="w-full flex flex-col relative">
-            <div style={{transform: `translateY(-${scroll}svh)`}} className='z-3'>
+            <div style={{transform: `translateY(-${scroll}svh)`}} className='z-3 duration-200'>
                 <FlameSvg svgColor="#efb010" xPos={30} yPos={0} delay={1} index={1} scale={1}/>
                 <div className='bg-[#efb010] absolute inset-0 -top-70 w-full h-[100vh]'/>
             </div>
-            <div style={{transform: `translateY(-${scroll * 1.5}svh)`}} className='z-2'>
+            <div style={{transform: `translateY(-${scroll * 1.5}svh)`}} className='z-2 duration-200'>
                 <FlameSvg svgColor="#d26200" xPos={-70} yPos={50} delay={2} index={-2} scale={-1}/>
                 <div className='bg-[#d26200] absolute inset-0 -top-90 w-full h-[100vh]'/>
             </div>
