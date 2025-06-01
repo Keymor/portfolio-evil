@@ -3,34 +3,34 @@ import { useState } from "react"
 export default function Skills() {
     const array = [
         {
-            img: '1'
+            img: '/logos/ts.jpg'
         },
         {
-            img: '2'
+            img: '/logos/css.jpg'
         },
         {
-            img: '3'
+            img: '/logos/express.jpg'
         },
         {
-            img: '4'
+            img: '/logos/html.jpg'
         },
         {
-            img: '5'
+            img: '/logos/JWT.jpg'
         },
         {
-            img: '6'
+            img: '/logos/mongodb.jpg'
         },
         {
-            img: '7'
+            img: '/logos/nest.jpg'
         },
         {
-            img: '8'
+            img: '/logos/next.jpg'
         },
         {
-            img: '9'
+            img: '/logos/node.jpg'
         },
         {
-            img: '10'
+            img: '/logos/react.jpg'
         },
     ]
     const arraySmall = [
@@ -74,7 +74,7 @@ export default function Skills() {
     return (
         <div className='flex flex-col sm:gap-5 w-full z-10'>
             <div className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold'>STACK</div>
-            <h1 className='w-fit text-4xl font-bold mx-auto text-shadow-md'>MY SKILLS</h1>
+            <h1 className='w-fit text-4xl font-bold mx-auto text-shadow-md text-white'>MY SKILLS</h1>
             <div className='hidden sm:flex flex-row w-[90%] mx-auto'>
                 <div className='w-full h-25 flex items-center relative'>
                     {array.map((item, index) => {
@@ -94,7 +94,7 @@ export default function Skills() {
                                 onMouseEnter={() => onMouse(index)}
                                 onMouseLeave={() => onMouseLeave()}
                                 className='absolute size-8 sm:size-25 bg-white shadow-md rounded-md flex right-0 opacity-0 translate-x-[50%] hover:size-35 duration-200'>
-                                <div /* className='size-8 bg-amber-300 rounded-4xl m-auto' */>{item.img}</div>
+                                <img className="rounded-2xl" src={item.img}/> 
                             </div>
                         )
                     })}
