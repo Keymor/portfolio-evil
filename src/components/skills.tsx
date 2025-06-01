@@ -73,10 +73,10 @@ export default function Skills() {
 
     return (
         <div className='flex flex-col sm:gap-5 w-full z-10'>
-            <div className='w-fit self-center mx-auto bg-black text-white px-15 py-3 rounded-3xl font-bold'>STACK</div>
+            <div className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold'>STACK</div>
             <h1 className='w-fit text-4xl font-bold mx-auto text-shadow-md'>MY SKILLS</h1>
             <div className='hidden sm:flex flex-row w-[90%] mx-auto'>
-                <div className='w-full h-[30svh] flex items-center relative'>
+                <div className='w-full h-25 flex items-center relative'>
                     {array.map((item, index) => {
                         return (
                             <div
