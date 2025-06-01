@@ -20,3 +20,11 @@ body {
   place-items: center;
   min-width: 320px;
 }
+
+@font-face {
+  font-family: 'DesFont';
+  src: url('/D-DINCondensed-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

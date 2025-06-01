@@ -17,12 +17,22 @@ function App() {
   }, [])
 
   return (
-    <div className='flex flex-col w-screen h-fit overflow-clip overflow-y-hidden'>
+    <div className='flex flex-col w-screen h-fit overflow-clip overflow-y-hidden fontAdd'>
       <Header />
-      <div className='flex flex-col w-full h-[100svh] mx-auto relative bg-black'>
-        <div className='flex flex-col sm:flex-row w-full sm:w-[1180px] h-3/5 mx-auto mt-[25%] sm:mt-[10%] p-[5%]'>
-          <img style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} src='mainText.png' className='mr-auto z-1 size-100'/>
-          <img style={{ animation: timer ? 'evil 1s ease-in-out infinite' : 'appearence 1.5s ease-in-out forwards' }} src='/demon.svg' className='ml-auto z-1 size-100' />
+      <div className='flex flex-col w-full h-[100svh] relative bg-black'>
+        <div className='flex flex-col sm:flex-row w-screen sm:w-[1180px] h-3/5 mt-[25%] sm:mt-[15%] justify-center self-center gap-[10vw]'>
+          <div style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} className='rounded-2xl flex flex-col gap-1 z-1'>
+            <h1 className='py-3 px-4 font-bold text-xl bg-[#cb3838] rounded-4xl text-center w-fit text-white'>FULL STACK WEB DEVELOPER</h1>
+            <img src='/HEY.svg' className='h-fit w-4/10 my-1'/>
+            <h1 className='text-5xl font-bold text-white whitespace-nowrap'>I'M VLADYSLAV KUTUZOV</h1>
+            <h1 className='text-5xl font-bold text-white whitespace-nowrap'>I BUILD FRIENDLY WEB EXPERIENCES</h1>
+            <div className='flex flex-row gap-10 mt-6'>
+              <div className='size-15 bg-[#cb3838] rounded-full'/>
+              <div className='size-15 bg-[#cb3838] rounded-full'/>
+              <div className='size-15 bg-[#cb3838] rounded-full'/>
+            </div>
+          </div>
+          <img style={{ animation: timer ? 'evil 1s ease-in-out infinite' : 'appearence 1.5s ease-in-out forwards' }} src='/demon.svg' className='z-1 size-100 sm:size-130 translate-x-1/10' />
         </div>
         <Fire color='rgb(150, 25, 25' amount={50}/>
         <div className='w-full -mb-140 mt-auto scale-x-110 z-0'>
@@ -33,18 +43,19 @@ function App() {
         </div>
       </div>
       <div className='h-[5vh]'/>
-      <div className='w-full h-[50svh] flex flex-col sm:flex-row items-start'>
-        <div className='sm:translate-0 -translate-x-1/20 sm:ml-auto sm:mr-10 mx-auto size-auto z-10 relative hover:scale-110 duration-300 cursor-pointer'>
-          <img src='/devil.svg' className='size-fit sm:size-[20svw]' />
-          <img src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/10 right-2/8 blink delay-300' />
-          <h1 className=' absolute top-1/2 left-1/2 -translate-x-1/3 text-2xl font-bold whitespace-nowrap'>PROJECT 1</h1>
+      <div className='w-full h-[50svh] flex flex-col sm:flex-row items-start text-red-800'>
+        <div className='sm:translate-0 -translate-x-1/20 mx-auto size-auto z-10 relative hover:scale-110 duration-300 cursor-pointer'>
+          <img src='/devil.svg' className='size-fit sm:size-[30svw]' />
+          <img src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/7 right-1/3 blink delay-300' />
+          <h1 className=' absolute top-4/9 right-4/9 translate-1/2 text-5xl font-bold whitespace-nowrap'>PROJECT 1</h1>
         </div>
-        <div className='sm:ml-10 sm:mr-auto mx-auto size-fit sm:size-[20svw] z-10 relative hover:scale-110 duration-300 cursor-pointer'>
-          <img src='/devil-1.svg' className='size-fit sm:size-[20svw]' />
-          <img src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/10 right-2/7 blinkTwo delay-1000' />
-          <h1 className=' absolute top-1/2 left-1/2 -translate-x-1/2 text-2xl font-bold whitespace-nowrap'>PROJECT 2</h1>
+        <div className='sm:ml-10 sm:mr-auto mx-auto z-10 relative hover:scale-110 duration-300 cursor-pointer'>
+          <img src='/devil-1.svg' className='size-fit sm:size-[30svw]' />
+          <img src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/7 right-3/8 blinkTwo delay-1000' />
+          <h1 className=' absolute top-4/9 left-1/2 -translate-x-1/2 text-5xl font-bold whitespace-nowrap'>PROJECT 2</h1>
         </div>
       </div>
+      <div className='h-[30svh]'/>
       <Skills />
       <Contact />
     </div>

@@ -24,6 +24,10 @@ body {
   animation: blink 4s linear infinite;
 }
 
+.fontAdd {
+  font-family: 'DesFont';
+}
+
 @keyframes shifting {
   0% {
     right: 0%;

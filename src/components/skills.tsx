@@ -73,9 +73,9 @@ export default function Skills() {
 
     return (
         <div className='flex flex-col sm:gap-5 w-full z-10'>
-            <div className='w-fit self-center mx-auto bg-black text-white px-10 py-2 rounded-3xl font-bold'>STACK</div>
-            <h1 className='w-fit text-4xl font-bold mx-auto'>MY SKILLS</h1>
-            <div className='flex flex-row w-[90%] mx-auto'>
+            <div className='w-fit self-center mx-auto bg-black text-white px-15 py-3 rounded-3xl font-bold'>STACK</div>
+            <h1 className='w-fit text-4xl font-bold mx-auto text-shadow-md'>MY SKILLS</h1>
+            <div className='hidden sm:flex flex-row w-[90%] mx-auto'>
                 <div className='w-full h-[30svh] flex items-center relative'>
                     {array.map((item, index) => {
                         return (
@@ -100,7 +100,7 @@ export default function Skills() {
                     })}
                 </div>
             </div>
-            <div className='w-90 h-fit mx-auto bg-white rounded-4xl border-5 border-pink-200 flex flex-wrap gap-6.5 p-6.5 sm:hidden'>
+            <div className='w-90 h-fit mx-auto flex flex-wrap gap-6.5 p-6.5 sm:hidden'>
                 {arraySmall.map((item, index) => {
                     return (
                         <div key={index} className='size-20 bg-white rounded-lg drop-shadow-md'>{item.img}</div>
