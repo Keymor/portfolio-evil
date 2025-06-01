@@ -31,35 +31,35 @@ export default function Skills() {
         },
         {
             img: '/logos/react.jpg'
-        },
+        }
     ]
     const arraySmall = [
         {
-            img: '1'
+            img: '/logos/ts.jpg'
         },
         {
-            img: '2'
+            img: '/logos/css.jpg'
         },
         {
-            img: '3'
+            img: '/logos/express.jpg'
         },
         {
-            img: '4'
+            img: '/logos/JWT.jpg'
         },
         {
-            img: '5'
+            img: '/logos/mongodb.jpg'
         },
         {
-            img: '6'
+            img: '/logos/nest.jpg'
         },
         {
-            img: '7'
+            img: '/logos/next.jpg'
         },
         {
-            img: '8'
+            img: '/logos/node.jpg'
         },
         {
-            img: '9'
+            img: '/logos/react.jpg'
         }
     ]
     const [hover, setHover] = useState(-10)
@@ -103,7 +103,9 @@ export default function Skills() {
             <div className='w-90 h-fit mx-auto flex flex-wrap gap-6.5 p-6.5 sm:hidden'>
                 {arraySmall.map((item, index) => {
                     return (
-                        <div key={index} className='size-20 bg-white rounded-lg drop-shadow-md'>{item.img}</div>
+                        <div key={index} className='size-20 bg-white rounded-lg drop-shadow-md'>
+                                <img className="rounded-2xl" src={item.img}/> 
+                        </div>
                     )
                 })}
             </div>
