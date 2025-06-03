@@ -48,17 +48,17 @@ function App() {
       <div className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold z-10'>MY WORK</div>
       <h1 className='w-fit text-4xl font-bold mx-auto text-shadow-md z-10 mt-5'>PROJECTS</h1>
       <div className='h-[50svh] flex flex-col w-screen sm:w-[1180px] sm:flex-row text-red-800 justify-center self-center gap-10 mt-10'>
-        <div onMouseEnter={() => setHover1(true)} onMouseLeave={() => setHover1(false)} className='sm:translate-0 -translate-x-1/20 z-10 relative hover:scale-120 duration-300 cursor-pointer drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
+        <div onMouseEnter={() => setHover1(true)} onMouseLeave={() => setHover1(false)} className='sm:translate-0 -translate-x-1/20 z-1 relative hover:scale-120 duration-300 cursor-pointer drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div style={{ visibility: hover1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }} className='bg-white rounded-2xl w-2/3 h-1/2 top-6/10 left-[55%] -translate-1/2 absolute inset-0 flex duration-300' />
-          <img src='/devil.svg' className='size-fit sm:size-[30svw]' />
-          <img src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/7 right-[31%] blink delay-300' />
-          <h1 style={{ visibility: hover1 ? 'hidden' : 'visible'}} className=' absolute top-3/10 right-4/9 translate-1/2 text-7xl font-bold whitespace-nowrap'>PROJECT 1</h1>
+          <img src='/devil.svg' className='size-fit sm:size-[27svw]' />
+          <img style={{visibility: hover1 ? 'visible' : 'hidden'}} src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/7 right-[31%] blink delay-300' />
+          <h1 style={{ visibility: hover1 ? 'hidden' : 'visible'}} className='absolute left-11/20 top-1/2 -translate-1/2 text-7xl font-bold whitespace-nowrap'>PROJECT 1</h1>
         </div>
         <div onMouseEnter={() => setHover2(true)} onMouseLeave={() => setHover2(false)} className='z-10 relative hover:scale-120 duration-300 cursor-pointer drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div style={{ visibility: hover2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }} className='bg-white rounded-2xl w-2/3 h-1/2 top-6/10 left-[49.3%] -translate-1/2 absolute inset-0 flex duration-300' />
-          <img src='/devil-1.svg' className='size-fit sm:size-[31.5svw]' />
-          <img src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/7 right-3/8 blinkTwo delay-1000' />
-          <h1 style={{ visibility: hover2 ? 'hidden' : 'visible'}} className=' absolute top-7/20 left-1/2 -translate-x-1/2 text-7xl font-bold whitespace-nowrap'>PROJECT 2</h1>
+          <img src='/devil-1.svg' className='size-fit sm:size-[28.5svw]' />
+          <img style={{visibility: hover2 ? 'visible' : 'hidden'}} src='/eyes.svg' className='size-20 sm:size-[8svw] absolute top-1/7 right-3/8 blinkTwo delay-1000' />
+          <h1 style={{ visibility: hover2 ? 'hidden' : 'visible'}} className=' absolute top-1/2 left-1/2 -translate-1/2 text-7xl font-bold whitespace-nowrap'>PROJECT 2</h1>
         </div>
       </div>
       <div className='h-[15svh]' />
@@ -69,4 +69,5 @@ function App() {
 }
 
 export default App
-//upd
+
+//fire in 16:9
