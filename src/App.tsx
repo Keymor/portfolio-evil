@@ -54,10 +54,11 @@ function App() {
           className='text-center sm:w-4/10 size-fit z-10 relative hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div
             style={{ visibility: hover1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }}
-            className='bg-white rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex duration-300' />
-          <img src='/devil.svg' className='mx-auto sm:mx-0 sm:size-full' />
-          <img style={{ visibility: hover1 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[15%] left-1/2 -translate-x-1/2 blink delay-300' />
-          <h1 style={{ visibility: hover1 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap'>PROJECT 1</h1>
+            className='bg-white rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex duration-300 z-2' />
+          <img src='/devil.svg' className=' relative mx-auto sm:mx-0 sm:size-full z-1' />
+          <img style={{ visibility: hover1 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[15%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
+          <img src='/tail.svg' className='absolute -left-1/20 top-19/20 inset-0 scale-180 z-2'/>
+          <h1 style={{ visibility: hover1 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 1</h1>
         </div>
         <div
           onMouseEnter={() => setHover2(true)}
@@ -65,10 +66,11 @@ function App() {
           className='text-center sm:w-4/10 size-fit z-10 relative hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div
             style={{ visibility: hover2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }}
-            className='bg-white rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex duration-300' />
-          <img src='/devil.svg' className='mx-auto sm:mx-0 sm:size-full' />
-          <img style={{ visibility: hover2 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[15%] left-1/2 -translate-x-1/2 blink delay-300' />
-          <h1 style={{ visibility: hover2 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap'>PROJECT 2</h1>
+            className='bg-white rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex duration-300 z-2' />
+          <img src='/devil.svg' className=' relative mx-auto sm:mx-0 sm:size-full z-1' />
+          <img src='/tail.svg' className='absolute left-12/20 top-19/20 inset-0 scale-180 -scale-x-180 rotate-50 z-0'/>
+          <img style={{ visibility: hover2 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[15%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
+          <h1 style={{ visibility: hover2 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 2</h1>
         </div>
       </div>
       <div className='h-[15svh]' />
