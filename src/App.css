@@ -30,7 +30,7 @@ body {
 
 @keyframes shifting {
   0% {
-    right: 0%;
+    right: 1080px;
     opacity: 0%;
   }
 
@@ -43,7 +43,7 @@ body {
   }
 
   100% {
-    right: 100%;
+    right: 0px;
     opacity: 0%;
   }
 }
