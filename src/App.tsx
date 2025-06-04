@@ -58,7 +58,7 @@ function App() {
         </div>
         <Fire color='rgb(150, 25, 25' amount={50} />
         <div className='w-full -mb-140 mt-auto scale-x-110 z-0'>
-          <FlameBack />
+          {/* <FlameBack /> */}
         </div>
         <div className='w-full -mb-100 mt-auto scale-x-110 z-3'>
           <Flame />
