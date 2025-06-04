@@ -14,6 +14,24 @@ function App() {
   const [hoverMob1, setHoverMob1] = useState(false)
   const [hoverMob2, setHoverMob2] = useState(false)
 
+  const sizeUpOne = () => {
+    if (window.innerWidth > 650) {
+      setHover1(!hover1)
+    } else {
+      setHover1(!hover1)
+      setHoverMob1(!hoverMob1)
+    }
+  }
+
+  const sizeUpTwo = () => {
+    if (window.innerWidth > 650) {
+      setHover2(!hover2)
+    } else {
+      setHover2(!hover2)
+      setHoverMob2(!hoverMob2)
+    }
+  }
+
   useEffect(() => {
     setTimeout(() => {
       setTimer(true)
@@ -51,9 +69,9 @@ function App() {
       <h1 className='w-fit text-white text-4xl font-bold mx-auto text-shadow-md z-10 mt-5'>PROJECTS</h1>
       <div className='h-[50svh] flex flex-col w-screen sm:max-w-[1080px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10'>
         <div
-          style={{ scale: hoverMob1 ? 2 : 1, zIndex: hoverMob1 ? 11 : 10 }}
-          onMouseEnter={() => { setHover1(true); setHoverMob1(!hoverMob1) }}
-          onMouseLeave={() => { setHover1(false); setHoverMob1(!hoverMob1) }}
+          style={{ scale: hoverMob1 ? 2 : '', zIndex: hoverMob1 ? 11 : 10 }}
+          onMouseEnter={() => sizeUpOne()}
+          onMouseLeave={() => sizeUpOne()}
           className='text-center sm:w-4/10 size-fit z-10 relative hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div onClick={() => { setHoverMob1(!hoverMob1); setHover1(!hover1) }} className='sm:hidden rounded-4xl absolute inset-0 size-full z-2 sm:z-1' />
           <div
@@ -65,9 +83,9 @@ function App() {
           <h1 style={{ visibility: hover1 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 1</h1>
         </div>
         <div
-          style={{ scale: hoverMob2 ? 2 : 1, zIndex: hoverMob2 ? 11 : 10 }}
-          onMouseEnter={() => {setHover2(true); setHoverMob2(!hoverMob2)}}
-          onMouseLeave={() => {setHover2(false); setHoverMob2(!hoverMob2)}}
+          style={{ scale: hoverMob2 ? 2 : '', zIndex: hoverMob2 ? 11 : 10 }}
+          onMouseEnter={() => sizeUpTwo()}
+          onMouseLeave={() => sizeUpTwo()}
           className='text-center sm:w-4/10 size-fit z-10 relative hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div onClick={() => { setHoverMob2(!hoverMob2); setHover2(!hover2) }} className='sm:hidden rounded-4xl absolute inset-0 size-full z-2 sm:z-1' />
           <div
