@@ -3,7 +3,7 @@ import Flame from './components/flame'
 import Fire from './components/particless'
 import Header from './components/header'
 import { useEffect, useState } from 'react'
-import FlameBack from './components/flameBack'
+// import FlameBack from './components/flameBack'
 import Skills from './components/skills'
 import Contact from './components/contacts'
 
