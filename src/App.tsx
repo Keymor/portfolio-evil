@@ -72,8 +72,7 @@ function App() {
           style={{ scale: hoverMob1 ? 2 : '', zIndex: hoverMob1 ? 11 : 10 }}
           onMouseEnter={() => sizeUpOne()}
           onMouseLeave={() => sizeUpOne()}
-          className='text-center sm:w-4/10 size-fit z-10 relative hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
-          <div onClick={() => { setHoverMob1(!hoverMob1); setHover1(!hover1) }} className='sm:hidden rounded-4xl absolute inset-0 size-full z-2 sm:z-1' />
+          className='text-center sm:w-4/10 size-fit z-10 relative sm:hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div
             style={{ visibility: hover1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }}
             className='bg-white rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex duration-300 z-3' />
@@ -86,8 +85,7 @@ function App() {
           style={{ scale: hoverMob2 ? 2 : '', zIndex: hoverMob2 ? 11 : 10 }}
           onMouseEnter={() => sizeUpTwo()}
           onMouseLeave={() => sizeUpTwo()}
-          className='text-center sm:w-4/10 size-fit z-10 relative hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
-          <div onClick={() => { setHoverMob2(!hoverMob2); setHover2(!hover2) }} className='sm:hidden rounded-4xl absolute inset-0 size-full z-2 sm:z-1' />
+          className='text-center sm:w-4/10 size-fit z-10 relative sm:hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div
             style={{ visibility: hover2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }}
             className='bg-white rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex duration-300 z-2' />
