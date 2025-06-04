@@ -43,7 +43,7 @@ export default function Skills() {
     }
 
     return (
-        <div className='flex flex-col sm:gap-5 w-full z-10 mt-[10svh]'>
+        <div className='flex flex-col sm:gap-5 w-full z-10 mt-[15svh]'>
             <div className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold'>STACK</div>
             <h1 className='w-fit text-4xl font-bold mx-auto text-shadow-md text-white'>MY SKILLS</h1>
             <div className='flex flex-row w-full justify-center relative h-25'>
@@ -64,7 +64,7 @@ export default function Skills() {
                                 }}
                                 onMouseEnter={() => onMouse(index)}
                                 onMouseLeave={() => onMouseLeave()}
-                                className='absolute size-25 bg-white shadow-md rounded-md flex right-0 opacity-0 translate-x-[50%] hover:scale-140 duration-200'>
+                                className='absolute size-25 bg-white shadow-md rounded-2xl flex right-0 opacity-0 translate-x-[50%] hover:scale-140 duration-200'>
                                 <img className="rounded-2xl" src={item.img}/> 
                             </div>
                         )
