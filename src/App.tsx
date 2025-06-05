@@ -1,11 +1,12 @@
 import './App.css'
-import Flame from './components/flame'
+import { motion } from 'framer-motion'
 import Fire from './components/particless'
 import Header from './components/header'
 import { useEffect, useState } from 'react'
-// import FlameBack from './components/flameBack'
 import Skills from './components/skills'
 import Contact from './components/contacts'
+import NewFlame from './components/newFlame'
+import NewFlameFront from './components/newFlameFront'
 
 function App() {
   const [timer, setTimer] = useState(false)
@@ -57,17 +58,34 @@ function App() {
           <img style={{ animation: timer ? 'evil 1s ease-in-out infinite' : 'appearence 1.5s ease-in-out forwards' }} src='/demon.svg' className='z-1 size-80 mx-auto sm:mx-0 sm:size-130 translate-x-1/10' />
         </div>
         <Fire color='rgb(150, 25, 25' amount={50} />
-        <div className='w-full -mb-140 mt-auto scale-x-110 z-0'>
+        <div className='w-full -mb-140 mt-auto z-0'>
           {/* <FlameBack /> */}
+        <NewFlame />
         </div>
-        <div className='w-full -mb-100 mt-auto scale-x-110 z-3'>
-          <Flame />
+        <div className='w-full -mb-100 mt-auto z-3'>
+          {/* <Flame /> */}
+        <NewFlameFront />
         </div>
       </div>
       <div className='h-[5vh]' />
-      <div className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold z-10'>MY WORK</div>
-      <h1 className='w-fit text-white text-4xl font-bold mx-auto text-shadow-md z-10 mt-5'>PROJECTS</h1>
-      <div className='h-[50svh] flex flex-col w-screen sm:max-w-[1080px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10'>
+      <motion.div
+        initial={{ opacity: 0, scale: .9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold z-10'>MY WORK</motion.div>
+      <motion.h1
+        initial={{ opacity: 0, scale: .9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className='w-fit text-white text-4xl font-bold mx-auto text-shadow-md z-10 mt-5'>PROJECTS</motion.h1>
+      <motion.div
+        initial={{ opacity: 0, scale: .9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className='h-[50svh] flex flex-col w-screen sm:max-w-[1080px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10'>
         <div
           style={{ scale: hoverMob1 ? 2 : '', zIndex: hoverMob1 ? 11 : 10 }}
           onMouseEnter={() => sizeUpOne()}
@@ -94,7 +112,7 @@ function App() {
           <img style={{ visibility: hover2 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[15%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
           <h1 style={{ visibility: hover2 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 2</h1>
         </div>
-      </div>
+      </motion.div>
       <div className='h-[15svh]' />
       <Skills />
       <Contact />

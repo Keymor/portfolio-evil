@@ -1,10 +1,16 @@
 import Fire from "./particless"
+import { motion } from 'framer-motion'
 
 export default function Contact() {
 
     return (
         <div className="h-screen w-screen flex relative">
-            <div className="w-19/20 h-1/2 sm:w-[600px] m-auto mt-[40%] sm:mt-[10%] flex flex-col gap-5 z-10">
+            <motion.div
+                initial={{ opacity: 0, scale: .9, transform: 'translateY(100px)'}}
+                whileInView={{ opacity: 1, scale: 1, transform: 'translateY(0px)' }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                className="w-19/20 h-1/2 sm:w-[600px] m-auto mt-[40%] sm:mt-[10%] flex flex-col gap-5 z-10">
                 <h1 className="text-white font-bold text-3xl text-shadow-md text-center">CONTACT</h1>
                 <div className="gap-5 w-full p-10 h-fit bg-black rounded-4xl flex flex-row">
                     <div className="gap-5 min-h-fit h-1/4 flex flex-col my-auto w-1/2 cursor-pointer justify-center items-center">
@@ -29,7 +35,7 @@ export default function Contact() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <img src="/mauntings_back.svg" className="absolute inset-0 w-full top-auto scale-200 sm:scale-100 sm:-bottom-80 z-1" />
             <img src="/front_mauntain.svg" className="absolute inset-0 w-full top-auto scale-200 sm:scale-100 sm:-bottom-80 z-0" />
             <Fire color="rgb(114, 114, 114" amount={20} />
