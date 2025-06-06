@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function Contact() {
 
     return (
-        <div className="h-screen w-screen flex relative mt-[15svh]">
+        <div className="h-screen w-screen flex relative mt-0 sm:mt-[15svh]">
             <motion.div
                 initial={{ opacity: 0, scale: .9, transform: 'translateY(100px)'}}
                 whileInView={{ opacity: 1, scale: 1, transform: 'translateY(0px)' }}
@@ -36,8 +36,8 @@ export default function Contact() {
                     </div>
                 </div>
             </motion.div>
-            <img src="/mauntings_back.svg" className="absolute inset-0 w-full top-auto scale-200 sm:scale-100 sm:-bottom-80 z-1" />
-            <img src="/front_mauntain.svg" className="absolute inset-0 w-full top-auto scale-200 sm:scale-100 sm:-bottom-80 z-0" />
+            <img src="/mauntings_back.svg" className="absolute inset-0 w-full top-auto scale-200 sm:scale-100 z-1" />
+            <img src="/front_mauntain.svg" className="absolute inset-0 w-full top-auto scale-200 sm:scale-100 z-0" />
             <Fire color="rgb(114, 114, 114" amount={20} />
         </div>
     )

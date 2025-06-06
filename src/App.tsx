@@ -42,13 +42,13 @@ function App() {
     <div className='flex flex-col w-screen h-fit overflow-clip overflow-y-hidden fontAdd'>
       {/* Fires page 'EVIL' */}
       <div className='flex flex-col w-full h-[100svh] relative bg-black'>
-        <div className='flex flex-col lg:flex-row w-full lg:w-[1180px] h-3/5 sm:mt-[8%] mt-[10svh] justify-center self-center xl:gap-[10vw]'>
-          <div style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} className='mx-auto lg:mx-0 rounded-2xl flex flex-col gap-1 z-1 lg:w-full p-[5vw] lg:scale-80 xl:scale-100'>
+        <div className='min-h-[675px] flex flex-col lg:flex-row w-full lg:w-[1180px] h-3/5 sm:mt-[8%] justify-center items-center self-center'>
+          <div style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} className='mx-auto lg:mx-0 rounded-2xl flex flex-col gap-1 z-1'>
             <h1 className='py-3 px-4 font-bold text-xl bg-[#cb3838] rounded-4xl text-center w-fit text-white'>FULL STACK WEB DEVELOPER</h1>
             <img src='/HEY.svg' className='h-fit w-4/10 my-1' />
-            <h1 className='text-2xl sm:text-5xl font-bold text-white whitespace-nowrap'>I'M VLADYSLAV KUTUZOV</h1>
-            <h1 className='text-2xl sm:text-5xl font-bold text-white whitespace-nowrap'>I BUILD FRIENDLY WEB EXPERIENCES</h1>
-            <div className='flex flex-row gap-5 sm:gap-10 mt-2 sm:mt-6'>
+            <h1 className='text-2xl lg:text-5xl font-bold text-white whitespace-nowrap'>I'M VLADYSLAV KUTUZOV</h1>
+            <h1 className='text-2xl lg:text-5xl font-bold text-white whitespace-nowrap'>I BUILD FRIENDLY WEB EXPERIENCES</h1>
+            <div className='flex flex-row gap-5 lg:gap-10 mt-2 lg:mt-6'>
               <div className='size-15 bg-[#cb3838] rounded-full' />
               <div className='size-15 bg-[#cb3838] rounded-full' />
               <div className='size-15 bg-[#cb3838] rounded-full' />
@@ -107,7 +107,7 @@ function App() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className='h-[50svh] flex flex-col w-screen sm:max-w-[1080px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10 z-19'>
+        className='h-[50svh] flex flex-col w-screen sm:max-w-[920px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10 z-19'>
         <div
           style={{ scale: hoverMob1 ? 2 : '', zIndex: hoverMob1 ? 11 : 10 }}
           onMouseEnter={() => sizeUpOne()}
