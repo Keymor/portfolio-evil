@@ -30,7 +30,7 @@ const Fire: React.FC<ParticlesProp> = ({amount, color}) => {
 
   return (
     <>
-      <div className='w-full h-[100svh] absolute'>
+      <div className='transform-gpu will-change-transform w-full h-[100svh] absolute'>
         {particles}
       </div>
     </>

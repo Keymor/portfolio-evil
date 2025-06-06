@@ -28,6 +28,19 @@ body {
   font-family: 'DesFont';
 }
 
+.flameIdle1 {
+  animation: flameIdle 2s linear infinite;
+}
+.flameIdle2 {
+  animation: flameIdle 2.5s linear infinite;
+}
+.flameIdle3 {
+  animation: flameIdle 3s linear infinite;
+}
+.flameIdle4 {
+  animation: flameIdle 3.5s linear infinite;
+}
+
 @keyframes shifting {
   0% {
     right: 1080px;
@@ -45,6 +58,119 @@ body {
   100% {
     right: 0px;
     opacity: 0%;
+  }
+}
+
+@keyframes appearence {
+  0% {
+    rotate: 20deg;
+    transform: translateX(100vw);
+    scale: 0;
+  }
+
+  40% {
+    transform: translateX(-5vw);
+    scale: 105%;
+  }
+
+  60% {
+    transform: translateX(1vw);
+    scale: 70%;
+  }
+
+  100% {
+    rotate: 0;
+    transform: translateX(0vw);
+    scale: 1;
+  }
+}
+
+@keyframes fall {
+  0% {
+    rotate: -5deg;
+    transform: translateY(-250vh);
+    scale: 0;
+  }
+
+  45% {
+    transform: translateY(4vh);
+    scale: 1.1;
+  }
+
+  65% {
+    transform: translateY(-1vh);
+    scale: 0.9;
+  }
+
+  75% {
+    transform: translateY(1vh);
+  }
+
+  100% {
+    rotate: 0;
+    transform: translateY(0vh);
+    scale: 1;
+  }
+}
+
+@keyframes idle {
+  0% {
+    transform: translateY(0vh);
+  }
+
+  50% {
+    transform: translateY(-1vh);
+  }
+
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes evil {
+  0% {
+    scale: 1;
+    transform: translateY(0vh);
+  }
+
+  50% {
+    scale: 1.02;
+    transform: translateY(0.5vh);
+  }
+
+  100% {
+    scale: 1;
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  7% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 1;
+  }
+
+  16% {
+    opacity: 0;
+  }
+
+  19% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -71,118 +197,20 @@ body {
   }
 }
 
-@keyframes flameMove {
+@keyframes flameIdle {
   0% {
-    left: var(--positionFlame);
-    bottom: var(--upFlame);
+    transform: translateX(0%) translateY(0%);
   }
   25% {
-    bottom: calc(var(--upFlame) - 5px);
+    transform: translateX(-1%) translateY(2%);
   }
   50% {
-    left: calc(var(--positionFlame) + 40px);
+    transform: translateX(0%) translateY(4%);
   }
   75% {
-    bottom: calc(var(--upFlame) + 5px);
+    transform: translateX(1%) translateY(2%);
   }
   100% {
-    left: var(--positionFlame);
-    bottom: var(--upFlame);
-  }
-}
-
-@keyframes appearence {
-  0% {
-    rotate: 20deg;
-    transform: translateX(100vw);
-    scale: 0;
-  }
-  40% {
-    transform: translateX(-5vw);
-    scale: 105%;
-  }
-  60% {
-    transform: translateX(1vw);
-    scale: 70%;
-  }
-  100% {
-    rotate: 0;
-    transform: translateX(0vw);
-    scale: 1;
-  }
-}
-
-@keyframes fall {
-  0% {
-    rotate: -5deg;
-    transform: translateY(-250vh);
-    scale: 0;
-  }
-  45% {
-    transform: translateY(4vh);
-    scale: 1.1;
-  }
-  65%{
-    transform: translateY(-1vh);
-    scale: 0.9;
-  }
-  75%{
-    transform: translateY(1vh);
-  }
-  100% {
-    rotate: 0;
-    transform: translateY(0vh);
-    scale: 1;
-  }
-}
-
-@keyframes idle {
-  0% {
-    transform: translateY(0vh);
-  }
-  50% {
-    transform: translateY(-1vh);
-  }
-  100% {
-    transform: translateY(0vh);
-  }
-}
-
-@keyframes evil {
-  0% {
-    scale: 1;
-    transform: translateY(0vh);
-  }
-  50% {
-    scale: 1.02;
-    transform: translateY(0.5vh);
-  }
-  100% {
-    scale: 1;
-    transform: translateY(0vh);
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }  
-  7% {
-    opacity: 1;
-  }
-  10% {
-    opacity: 0;
-  }
-  13% {
-    opacity: 1;
-  }
-  16% {
-    opacity: 0;
-  }
-  19% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
+    transform: translateX(0%) translateY(0%);
   }
 }

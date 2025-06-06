@@ -43,8 +43,8 @@ function App() {
     <div className='flex flex-col w-screen h-fit overflow-clip overflow-y-hidden fontAdd'>
       <Header />
       <div className='flex flex-col w-full h-[100svh] relative bg-black'>
-        <div className='flex flex-col sm:flex-row w-full sm:w-[1180px] h-3/5 mt-[35%] sm:mt-[15%] justify-center self-center gap-[10vw]'>
-          <div style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} className='mx-auto sm:mx-0 rounded-2xl flex flex-col gap-1 z-1 sm:w-full p-[5vw]'>
+        <div className='flex flex-col lg:flex-row w-full lg:w-[1180px] h-3/5 mt-[35%] sm:mt-[8%] justify-center self-center xl:gap-[10vw]'>
+          <div style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} className='mx-auto lg:mx-0 rounded-2xl flex flex-col gap-1 z-1 lg:w-full p-[5vw] lg:scale-80 xl:scale-100'>
             <h1 className='py-3 px-4 font-bold text-xl bg-[#cb3838] rounded-4xl text-center w-fit text-white'>FULL STACK WEB DEVELOPER</h1>
             <img src='/HEY.svg' className='h-fit w-4/10 my-1' />
             <h1 className='text-2xl sm:text-5xl font-bold text-white whitespace-nowrap'>I'M VLADYSLAV KUTUZOV</h1>
@@ -55,15 +55,13 @@ function App() {
               <div className='size-15 bg-[#cb3838] rounded-full' />
             </div>
           </div>
-          <img style={{ animation: timer ? 'evil 1s ease-in-out infinite' : 'appearence 1.5s ease-in-out forwards' }} src='/demon.svg' className='z-1 size-80 mx-auto sm:mx-0 sm:size-130 translate-x-1/10' />
+          <img style={{ animation: timer ? 'evil 1s ease-in-out infinite' : 'appearence 1.5s ease-in-out forwards' }} src='/demon.svg' className='z-1 size-80 mx-auto lg:mx-0 translate-x-1/10 lg:size-100 xl:size-130' />
         </div>
         <Fire color='rgb(150, 25, 25' amount={50} />
         <div className='w-full -mb-140 mt-auto z-0'>
-          {/* <FlameBack /> */}
         <NewFlame />
         </div>
         <div className='w-full -mb-100 mt-auto z-3'>
-          {/* <Flame /> */}
         <NewFlameFront />
         </div>
       </div>

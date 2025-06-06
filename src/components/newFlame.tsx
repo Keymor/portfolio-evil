@@ -30,16 +30,40 @@ export default function NewFlame() {
 
     return (
         <div ref={ref} className='absolute w-full bottom-0'>
-            <motion.img
-                src='/dark.svg'
-                style={{ y: yDark }}
-                className="w-full absolute bottom-0">
-            </motion.img>
-            <motion.img
-                src='/red.svg'
-                style={{ y: yRed }}
-                className="w-full absolute bottom-0">
-            </motion.img>
+            <motion.div style={{ y: yDark }} className='transform-gpu will-change-transform w-full absolute -bottom-[105svh]'>
+                <motion.img
+                    whileInView={
+                        { y: [0, 10, 0, -10, 0], x: [0, 20, 0] }
+                    }
+                    viewport={{ once: false }}
+                    transition={{
+                        duration: 6,
+                        repeat: Infinity,
+                        repeatType: 'loop',
+                        ease: "easeInOut"
+                    }}
+                    src='/dark.svg'
+                    className="w-full scale-105 min-w-[720px] transform-gpu will-change-transform">
+                </motion.img>
+                <div className='w-full h-[100svh] bg-[#42120E] -translate-y-3 sm:-translate-y-2 transform-gpu will-change-transform' />
+            </motion.div>
+            <motion.div style={{ y: yRed }} className='transform-gpu will-change-transform w-full absolute -bottom-[105svh]'>
+                <motion.img
+                    whileInView={
+                        { y: [0, 10, 0, -10, 0], x: [0, 20, 0] }
+                    }
+                    viewport={{ once: false }}
+                    transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        repeatType: 'loop',
+                        ease: "easeInOut"
+                    }}
+                    src='/red.svg'
+                    className="w-full scale-105 min-w-[720px] transform-gpu will-change-transform">
+                </motion.img>
+                <div className='w-full h-[100svh] bg-[#8D2018] -translate-y-3 sm:-translate-y-2 transform-gpu will-change-transform' />
+            </motion.div>
         </div>
     )
 }
