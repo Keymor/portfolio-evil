@@ -83,7 +83,7 @@ function App() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className='w-fit text-white text-2xl font-bold text-shadow-md z-10 mx-auto my-40 px-3 lg:px-0'>
+        className='w-fit text-white text-2xl font-bold text-shadow-md z-10 mx-auto mt-20 sm:my-40 px-3 lg:px-0'>
         Full Stack developer, ex-Snapchat, artist and project manager.<br />
         I have 7 years of experience in the biggest American company like Snapchat as a manager and an artist.<br />
         I have strong project management and team communication.<br />
@@ -119,7 +119,7 @@ function App() {
             style={{ visibility: hover1 || hoverMob1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }}
             className='text-white gap-1 sm:gap-5 rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex flex-col duration-300 z-3'>
             <div style={{ animation: hover1 ? 'popUp 2s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2'>
-              <div className='scale-100 sm:scale-150 left-1/2 top-1/2 -translate-1/2 absolute flex size-20 rounded-full font-bold bg-red-800 text-amber-100 text-center'>
+              <div className='scale-100 sm:scale-150 left-1/2 top-1/2 -translate-1/2 absolute flex size-20 rounded-full font-bold bg-red-800 text-amber-100 text-center z-19'>
                 <p className='m-auto text-2xl whitespace-nowrap -translate-x-2/12'>
                   日本語学習
                 </p>
@@ -162,7 +162,7 @@ function App() {
           <div
             style={{ visibility: hover2 || hoverMob2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }}
             className='text-white gap-1 sm:gap-5 rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex flex-col duration-300 z-3'>
-            <div style={{ animation: hover2 ? 'popUp 2s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2'>
+            <div style={{ animation: hover2 ? 'popUp 2s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2 z-19'>
               <img src='/alexLogo.svg' className='size-110'/>
             </div>
             <p style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='text-red-800 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>

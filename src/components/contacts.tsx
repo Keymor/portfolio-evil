@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <div className="h-screen w-screen flex relative mt-0 sm:mt-[15svh]">
             <motion.div
-                initial={{ opacity: 0, scale: .9, transform: 'translateY(100px)'}}
+                initial={{ opacity: 0, scale: .9, transform: 'translateY(100px)' }}
                 whileInView={{ opacity: 1, scale: 1, transform: 'translateY(0px)' }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
@@ -15,12 +15,14 @@ export default function Contact() {
                 <div className="gap-5 w-full p-10 h-fit bg-black rounded-4xl flex flex-row">
                     <div className="gap-5 min-h-fit h-1/4 flex flex-col my-auto w-1/2 cursor-pointer justify-center items-center">
                         <a target="_blank" href="https://www.linkedin.com/in/vladyslav-kutuzov/">
-                            <div className="min-h-20 min-w-20 max-w-20 rounded-full bg-[#efb010]" />
+                            <img src="/linked.svg" className="min-h-20 min-w-20 max-w-20 rounded-full" />
                         </a>
                         <a href="https://github.com/Keymor" target="_blank">
-                            <div className="min-h-20 min-w-20 max-w-20 rounded-full bg-[#efb010]" />
+                            <img src="/git.svg" className="min-h-20 min-w-20 max-w-20 rounded-full" />
                         </a>
-                        <div className="min-h-20 min-w-20 max-w-20 rounded-full bg-[#efb010]" />
+                        <a href="mailto:vlad.kutuzov96@gmail.com">
+                            <div className="flex min-h-20 min-w-20 max-w-20 rounded-full" ><img src="/gmail.svg" className="scale-75 bg-[#efb010] rounded-full" /></div>
+                        </a>
                     </div>
                     <div className="gap-5 min-h-fit h-1/4 flex flex-col my-auto w-1/2 cursor-pointer">
                         <a target="_blank" href="https://www.linkedin.com/in/vladyslav-kutuzov/" >
