@@ -98,13 +98,13 @@ function App() {
         viewport={{ once: true }}
         transition={{ duration: 1 }}
         className='h-[50svh] flex flex-col w-screen sm:max-w-[920px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10 z-19'>
-        <motion.div
-          whileInView={{ scale: [1, 1.1, 1] }}
-          viewport={{once: true}}
-          transition={{
-            duration: 1,
-            repeat: 3
-          }}
+        <div
+          // whileInView={{ scale: [1, 1.1, 1] }}
+          // viewport={{ once: true }}
+          // transition={{
+          //   duration: 1,
+          //   repeat: 3
+          // }}
           style={{ scale: hoverMob1 ? 1.7 : '', zIndex: hoverMob1 ? 11 : 10 }}
           onMouseEnter={() => sizeUpOne()}
           onMouseLeave={() => sizeUpOne()}
@@ -147,7 +147,7 @@ function App() {
           <img style={{ visibility: hover1 || hoverMob1 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[20%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
           <img src='/tail.svg' className='absolute -left-1/20 top-19/20 inset-0 scale-100 sm:scale-180 z-1' />
           <h1 style={{ visibility: hover1 || hoverMob1 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 1</h1>
-        </motion.div>
+        </div>
         <div
           style={{ scale: hoverMob2 ? 1.7 : '', zIndex: hoverMob2 ? 11 : 10 }}
           onMouseEnter={() => sizeUpTwo()}
