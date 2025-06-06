@@ -52,7 +52,7 @@ export default function NewFlameFront() {
                 </motion.img>
                 <div className='w-full h-[100svh] bg-[#c46827] -translate-y-3 sm:-translate-y-2 transform-gpu will-change-transform' />
             </motion.div>
-            <motion.div style={{ y: yYellow }} className='transform-gpu will-change-transform w-full absolute -bottom-[310svh]'>
+            <motion.div style={{ y: yYellow }} className='transform-gpu will-change-transform w-full absolute -bottom-[210svh]'>
                 <motion.img
                     whileInView={
                         { y: [0, 10, 0, -10, 0], x: [0, 20, 0] }
@@ -67,7 +67,7 @@ export default function NewFlameFront() {
                     src='/yellow.svg'
                     className="w-full scale-105 min-w-[720px] transform-gpu will-change-transform">
                 </motion.img>
-                <div className='w-full h-[300svh] bg-[#efb010] -translate-y-3 sm:-translate-y-2 transform-gpu will-change-transform' />
+                <div className='w-full h-[200svh] bg-[#efb010] -translate-y-3 sm:-translate-y-2 transform-gpu will-change-transform' />
                 <motion.div
                 style={{opacity}}
                 className=' absolute inset-0 left-1/2 -top-1 sm:top-30 bg-black -translate-1/2 size-17 rounded-full z-19 animate-bounce'>

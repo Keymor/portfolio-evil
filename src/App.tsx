@@ -1,7 +1,6 @@
 import './App.css'
 import { motion } from 'framer-motion'
 import Fire from './components/particless'
-import Header from './components/header'
 import { useEffect, useState } from 'react'
 import Skills from './components/skills'
 import Contact from './components/contacts'
@@ -41,10 +40,9 @@ function App() {
 
   return (
     <div className='flex flex-col w-screen h-fit overflow-clip overflow-y-hidden fontAdd'>
-      <Header />
       {/* Fires page 'EVIL' */}
       <div className='flex flex-col w-full h-[100svh] relative bg-black'>
-        <div className='flex flex-col lg:flex-row w-full lg:w-[1180px] h-3/5 mt-[35%] sm:mt-[8%] justify-center self-center xl:gap-[10vw]'>
+        <div className='flex flex-col lg:flex-row w-full lg:w-[1180px] h-3/5 sm:mt-[8%] mt-[10svh] justify-center self-center xl:gap-[10vw]'>
           <div style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} className='mx-auto lg:mx-0 rounded-2xl flex flex-col gap-1 z-1 lg:w-full p-[5vw] lg:scale-80 xl:scale-100'>
             <h1 className='py-3 px-4 font-bold text-xl bg-[#cb3838] rounded-4xl text-center w-fit text-white'>FULL STACK WEB DEVELOPER</h1>
             <img src='/HEY.svg' className='h-fit w-4/10 my-1' />
@@ -97,7 +95,7 @@ function App() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold z-10'>MY WORK</motion.div>
+        className='w-fit self-center mt-[15svh] mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold z-10'>MY WORK</motion.div>
       <motion.h1
         initial={{ opacity: 0, scale: .9 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -137,7 +135,6 @@ function App() {
           <h1 style={{ visibility: hover2 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 2</h1>
         </div>
       </motion.div>
-      <div className='h-[15svh]' />
       <Skills />
       <Contact />
     </div>

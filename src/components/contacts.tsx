@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function Contact() {
 
     return (
-        <div className="h-screen w-screen flex relative">
+        <div className="h-screen w-screen flex relative mt-[15svh]">
             <motion.div
                 initial={{ opacity: 0, scale: .9, transform: 'translateY(100px)'}}
                 whileInView={{ opacity: 1, scale: 1, transform: 'translateY(0px)' }}
