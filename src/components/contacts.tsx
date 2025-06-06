@@ -11,7 +11,7 @@ export default function Contact() {
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
                 className="w-19/20 h-1/2 sm:w-[600px] m-auto mt-[40%] sm:mt-[10%] flex flex-col gap-5 z-10">
-                <h1 className="text-white font-bold text-3xl text-shadow-md text-center">CONTACT</h1>
+                <h1 className="text-white font-bold text-5xl lg:text-7xl text-shadow-md text-center">CONTACT</h1>
                 <div className="gap-5 w-full p-10 h-fit bg-black rounded-4xl flex flex-row">
                     <div className="gap-5 min-h-fit h-1/4 flex flex-col my-auto w-1/2 cursor-pointer justify-center items-center">
                         <a target="_blank" href="https://www.linkedin.com/in/vladyslav-kutuzov/">

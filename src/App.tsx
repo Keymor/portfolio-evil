@@ -66,18 +66,12 @@ function App() {
       </div>
       {/* About section */}
       <div className='h-[5vh]' />
-      <motion.div
-        initial={{ opacity: 0, scale: .9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-        className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold z-10'>👋</motion.div>
       <motion.h1
         initial={{ opacity: 0, scale: .9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className='w-fit text-white text-4xl font-bold mx-auto text-shadow-md z-10 mt-5'>ABOUT ME</motion.h1>
+        className='w-fit text-white text-5xl lg:text-7xl font-bold mx-auto text-shadow-md z-10 mt-5'>ABOUT ME</motion.h1>
       <motion.p
         initial={{ opacity: 0, scale: .9 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -92,25 +86,25 @@ function App() {
         was likely to do action with engen “lensStudio” with javaScript and some design parts.
       </motion.p>
       {/* Works section */}
-      <motion.div
-        initial={{ opacity: 0, scale: .9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-        className='w-fit self-center mt-[15svh] mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold z-10'>MY WORK</motion.div>
       <motion.h1
         initial={{ opacity: 0, scale: .9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className='w-fit text-white text-4xl font-bold mx-auto text-shadow-md z-10 mt-5'>PROJECTS</motion.h1>
+        className='w-fit text-white text-5xl lg:text-7xl font-bold mx-auto text-shadow-md z-10 mt-[15svh] mb-[5svh] sm:mb-0'>PROJECTS</motion.h1>
       <motion.div
         initial={{ opacity: 0, scale: .9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
         className='h-[50svh] flex flex-col w-screen sm:max-w-[920px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10 z-19'>
-        <div
+        <motion.div
+          whileInView={{ scale: [1, 1.1, 1] }}
+          viewport={{once: true}}
+          transition={{
+            duration: 1,
+            repeat: 3
+          }}
           style={{ scale: hoverMob1 ? 1.7 : '', zIndex: hoverMob1 ? 11 : 10 }}
           onMouseEnter={() => sizeUpOne()}
           onMouseLeave={() => sizeUpOne()}
@@ -118,18 +112,18 @@ function App() {
           <div
             style={{ visibility: hover1 || hoverMob1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }}
             className='text-white gap-1 sm:gap-5 rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex flex-col duration-300 z-3'>
-            <div style={{ animation: hover1 ? 'popUp 2s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2'>
+            <div style={{ animation: hover1 ? 'popUp 0.8s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2'>
               <div className='scale-100 sm:scale-150 left-1/2 top-1/2 -translate-1/2 absolute flex size-20 rounded-full font-bold bg-red-800 text-amber-100 text-center z-19'>
                 <p className='m-auto text-2xl whitespace-nowrap -translate-x-2/12'>
                   日本語学習
                 </p>
               </div>
             </div>
-            <p style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='text-amber-100 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>
+            <p style={{ animation: hover1 || hoverMob1 ? 'upp 1s linear forwards' : '' }} className='text-amber-100 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto opacity-0'>
               Nihon-Go is a modern Japanese learning web app for practicing Kana, Kanji, and vocabulary with progress tracking.
             </p>
-            <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }}
-              className='flex flex-row gap-1 sm:gap-2 mx-auto text-xs sm:text-lg'>
+            <div style={{ animation: hover1 || hoverMob1 ? 'upp 1s linear forwards' : '' }}
+              className='flex flex-row gap-1 sm:gap-2 mx-auto text-xs sm:text-lg opacity-0'>
               <p className='underline text-orange-400'>React,</p>
               <p className='underline text-orange-400'>TypeScript,</p>
               <p className='underline text-orange-400'>MongoDB,</p>
@@ -137,12 +131,12 @@ function App() {
               <p className='underline text-orange-400'>JWT</p>
             </div>
             <div className='flex flex-row gap-5 justify-center mb-auto text-xs sm:text-xl whitespace-nowrap'>
-              <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
+              <div style={{ animation: hover1 || hoverMob1 ? 'upp 1s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto opacity-0'>
                 <a href='https://nihongo-learning.up.railway.app/' target='blank'
                   className='text-orange-200'>Nihon Go learning</a>
                 <img src='/link.svg' className='size-3' />
               </div>
-              <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
+              <div style={{ animation: hover1 || hoverMob1 ? 'upp 1s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto opacity-0'>
                 <a href='https://github.com/Keymor/nihon-go-learning' target='blank'
                   className='text-orange-200'>GitHub</a>
                 <img src='/link.svg' className='size-3' />
@@ -153,7 +147,7 @@ function App() {
           <img style={{ visibility: hover1 || hoverMob1 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[20%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
           <img src='/tail.svg' className='absolute -left-1/20 top-19/20 inset-0 scale-100 sm:scale-180 z-1' />
           <h1 style={{ visibility: hover1 || hoverMob1 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 1</h1>
-        </div>
+        </motion.div>
         <div
           style={{ scale: hoverMob2 ? 1.7 : '', zIndex: hoverMob2 ? 11 : 10 }}
           onMouseEnter={() => sizeUpTwo()}
@@ -162,26 +156,26 @@ function App() {
           <div
             style={{ visibility: hover2 || hoverMob2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }}
             className='text-white gap-1 sm:gap-5 rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex flex-col duration-300 z-3'>
-            <div style={{ animation: hover2 ? 'popUp 2s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2 z-19'>
-              <img src='/alexLogo.svg' className='size-110'/>
+            <div style={{ animation: hover2 ? 'popUp 0.8s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2 z-19'>
+              <img src='/alexLogo.svg' className='size-110' />
             </div>
-            <p style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='text-amber-100 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>
+            <p style={{ animation: hover2 || hoverMob2 ? 'upp 1s linear forwards' : '' }} className='text-amber-100 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto opacity-0'>
               Alex Petrov’s portfolio is a showcase. It features a responsive landing page. Email friendly API integration.
             </p>
-            <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }}
-              className='flex flex-row gap-1 sm:gap-2 mx-auto text-xs sm:text-lg'>
+            <div style={{ animation: hover2 || hoverMob2 ? 'upp 1s linear forwards' : '' }}
+              className='flex flex-row gap-1 sm:gap-2 mx-auto text-xs sm:text-lg opacity-0'>
               <p className='underline text-orange-400'>React,</p>
               <p className='underline text-orange-400'>TypeScript,</p>
               <p className='underline text-orange-400'>Motion,</p>
               <p className='underline text-orange-400'>Vercel</p>
             </div>
             <div className='flex flex-row gap-5 justify-center mb-auto text-xs sm:text-xl whitespace-nowrap'>
-              <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
+              <div style={{ animation: hover2 || hoverMob2 ? 'upp 1s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto opacity-0'>
                 <a href='https://alexpetrov.vercel.app/' target='blank'
                   className='text-orange-200'>Artist Portfolio</a>
                 <img src='/link.svg' className='size-3' />
               </div>
-              <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
+              <div style={{ animation: hover2 || hoverMob2 ? 'upp 1s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto opacity-0'>
                 <a href='https://github.com/Keymor/3D-portfolio' target='blank'
                   className='text-orange-200'>GitHub</a>
                 <img src='/link.svg' className='size-3' />

@@ -49,9 +49,8 @@ export default function Skills() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className='flex flex-col gap-5 w-full z-10 mt-[25svh] sm:mt-[15svh]'>
-            <div className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold'>STACK</div>
-            <h1 className='w-fit text-4xl font-bold mx-auto text-shadow-md text-white'>MY SKILLS</h1>
+            className='flex flex-col gap-5 w-full z-10 mt-[30svh] sm:mt-[15svh]'>
+            <h1 className='w-fit text-5xl lg:text-7xl sm:mb-[3svh] font-bold mx-auto text-shadow-md text-white'>STACK</h1>
             <div className='flex flex-row w-full justify-center relative h-25'>
                 <div className='w-[1080px] h-25 flex absolute'>
                     {array.map((item, index) => {
