@@ -42,6 +42,7 @@ function App() {
   return (
     <div className='flex flex-col w-screen h-fit overflow-clip overflow-y-hidden fontAdd'>
       <Header />
+      {/* Fires page 'EVIL' */}
       <div className='flex flex-col w-full h-[100svh] relative bg-black'>
         <div className='flex flex-col lg:flex-row w-full lg:w-[1180px] h-3/5 mt-[35%] sm:mt-[8%] justify-center self-center xl:gap-[10vw]'>
           <div style={{ animation: timer ? 'idle 1s ease-in-out infinite' : 'fall 1.5s ease-in-out' }} className='mx-auto lg:mx-0 rounded-2xl flex flex-col gap-1 z-1 lg:w-full p-[5vw] lg:scale-80 xl:scale-100'>
@@ -59,13 +60,38 @@ function App() {
         </div>
         <Fire color='rgb(150, 25, 25' amount={50} />
         <div className='w-full -mb-140 mt-auto z-0'>
-        <NewFlame />
+          <NewFlame />
         </div>
         <div className='w-full -mb-100 mt-auto z-3'>
-        <NewFlameFront />
+          <NewFlameFront />
         </div>
       </div>
+      {/* About section */}
       <div className='h-[5vh]' />
+      <motion.div
+        initial={{ opacity: 0, scale: .9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className='w-fit self-center mx-auto bg-black text-white text-2xl px-15 py-3 rounded-4xl font-bold z-10'>👋</motion.div>
+      <motion.h1
+        initial={{ opacity: 0, scale: .9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className='w-fit text-white text-4xl font-bold mx-auto text-shadow-md z-10 mt-5'>ABOUT ME</motion.h1>
+      <motion.p
+        initial={{ opacity: 0, scale: .9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className='w-fit text-white text-2xl font-bold text-shadow-md z-10 mx-auto my-40'>
+        lkamsdlkmasldmasd<br />
+        asfasdasdasd asdjksa dja sldj asljd ljkasdj<br />
+        a,s da sdlhasdh asld laks dljkja sdjk<br />
+        ansn djhas dhj asd ashj d
+      </motion.p>
+      {/* Works section */}
       <motion.div
         initial={{ opacity: 0, scale: .9 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -83,7 +109,7 @@ function App() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className='h-[50svh] flex flex-col w-screen sm:max-w-[1080px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10'>
+        className='h-[50svh] flex flex-col w-screen sm:max-w-[1080px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10 z-19'>
         <div
           style={{ scale: hoverMob1 ? 2 : '', zIndex: hoverMob1 ? 11 : 10 }}
           onMouseEnter={() => sizeUpOne()}
