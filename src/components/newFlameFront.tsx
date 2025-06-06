@@ -70,7 +70,7 @@ export default function NewFlameFront() {
                 <div className='w-full h-[300svh] bg-[#efb010] -translate-y-3 sm:-translate-y-2 transform-gpu will-change-transform' />
                 <motion.div
                 style={{opacity}}
-                className=' absolute inset-0 left-1/2 top-30 bg-black -translate-1/2 size-17 rounded-full z-19 animate-bounce'>
+                className=' absolute inset-0 left-1/2 -top-1 sm:top-30 bg-black -translate-1/2 size-17 rounded-full z-19 animate-bounce'>
                     <img src='/arrow.svg' className='rotate-90 scale-50 -translate-y-1' />
                 </motion.div>
             </motion.div>
