@@ -83,11 +83,13 @@ function App() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className='w-fit text-white text-2xl font-bold text-shadow-md z-10 mx-auto my-40'>
-        lkamsdlkmasldmasd<br />
-        asfasdasdasd asdjksa dja sldj asljd ljkasdj<br />
-        a,s da sdlhasdh asld laks dljkja sdjk<br />
-        ansn djhas dhj asd ashj d
+        className='w-fit text-white text-2xl font-bold text-shadow-md z-10 mx-auto my-40 px-3 lg:px-0'>
+        Full Stack developer, ex-Snapchat, artist and project manager.<br />
+        I have 7 years of experience in the biggest American company like Snapchat as a manager and an artist.<br />
+        I have strong project management and team communication.<br />
+        I was in charge of the most urgent task in my team.<br />
+        During working in Snap I was fully involved in a working process and<br />
+        was likely to do action with engen “lensStudio” with javaScript and some design parts.
       </motion.p>
       {/* Works section */}
       <motion.div
@@ -109,30 +111,87 @@ function App() {
         transition={{ duration: 1 }}
         className='h-[50svh] flex flex-col w-screen sm:max-w-[920px] sm:flex-row text-red-800 items-center justify-center self-center gap-20 mt-20 sm:mt-10 z-19'>
         <div
-          style={{ scale: hoverMob1 ? 2 : '', zIndex: hoverMob1 ? 11 : 10 }}
+          style={{ scale: hoverMob1 ? 1.7 : '', zIndex: hoverMob1 ? 11 : 10 }}
           onMouseEnter={() => sizeUpOne()}
           onMouseLeave={() => sizeUpOne()}
-          className='text-center sm:w-4/10 size-fit z-10 relative sm:hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
+          className='text-center sm:w-4/10 size-fit z-10 relative lg:hover:scale-140 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div
-            style={{ visibility: hover1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }}
-            className='bg-white rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex duration-300 z-3' />
+            style={{ visibility: hover1 || hoverMob1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }}
+            className='text-white gap-1 sm:gap-5 rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex flex-col duration-300 z-3'>
+            <div style={{ animation: hover1 ? 'popUp 2s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2'>
+              <div className='scale-100 sm:scale-150 left-1/2 top-1/2 -translate-1/2 absolute flex size-20 rounded-full font-bold bg-red-800 text-amber-100 text-center'>
+                <p className='m-auto text-2xl whitespace-nowrap -translate-x-2/12'>
+                  日本語学習
+                </p>
+              </div>
+            </div>
+            <p style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='text-red-800 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>
+              Nihon-Go is a modern Japanese learning web app for practicing Kana, Kanji, and vocabulary with progress tracking.
+            </p>
+            <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }}
+              className='flex flex-row gap-1 sm:gap-2 mx-auto text-xs sm:text-lg'>
+              <p className='underline text-orange-400'>React,</p>
+              <p className='underline text-orange-400'>TypeScript,</p>
+              <p className='underline text-orange-400'>MongoDB,</p>
+              <p className='underline text-orange-400'>Express,</p>
+              <p className='underline text-orange-400'>JWT</p>
+            </div>
+            <div className='flex flex-row gap-5 justify-center mb-auto text-xs sm:text-xl whitespace-nowrap'>
+              <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
+                <a href='https://nihongo-learning.up.railway.app/' target='blank'
+                  className='text-orange-300'>Nihon Go learning</a>
+                <img src='/link.svg' className='size-3' />
+              </div>
+              <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
+                <a href='https://github.com/Keymor/nihon-go-learning' target='blank'
+                  className='text-orange-300'>GitHub</a>
+                <img src='/link.svg' className='size-3' />
+              </div>
+            </div>
+          </div>
           <img src='/devil.svg' className=' relative mx-auto sm:mx-0 sm:size-full z-1' />
-          <img style={{ visibility: hover1 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[15%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
+          <img style={{ visibility: hover1 || hoverMob1 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[20%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
           <img src='/tail.svg' className='absolute -left-1/20 top-19/20 inset-0 scale-100 sm:scale-180 z-1' />
-          <h1 style={{ visibility: hover1 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 1</h1>
+          <h1 style={{ visibility: hover1 || hoverMob1 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 1</h1>
         </div>
         <div
-          style={{ scale: hoverMob2 ? 2 : '', zIndex: hoverMob2 ? 11 : 10 }}
+          style={{ scale: hoverMob2 ? 1.7 : '', zIndex: hoverMob2 ? 11 : 10 }}
           onMouseEnter={() => sizeUpTwo()}
           onMouseLeave={() => sizeUpTwo()}
-          className='text-center sm:w-4/10 size-fit z-10 relative sm:hover:scale-120 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
+          className='text-center sm:w-4/10 size-fit z-10 relative lg:hover:scale-140 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div
-            style={{ visibility: hover2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }}
-            className='bg-white rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex duration-300 z-2' />
+            style={{ visibility: hover2 || hoverMob2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }}
+            className='text-white gap-1 sm:gap-5 rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex flex-col duration-300 z-3'>
+            <div style={{ animation: hover2 ? 'popUp 2s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2'>
+              <img src='/alexLogo.svg' className='size-110'/>
+            </div>
+            <p style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='text-red-800 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>
+              Alex Petrov’s portfolio is a showcase. It features a responsive landing page. Email friendly API integration.
+            </p>
+            <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }}
+              className='flex flex-row gap-1 sm:gap-2 mx-auto text-xs sm:text-lg'>
+              <p className='underline text-orange-400'>React,</p>
+              <p className='underline text-orange-400'>TypeScript,</p>
+              <p className='underline text-orange-400'>Motion,</p>
+              <p className='underline text-orange-400'>Vercel</p>
+            </div>
+            <div className='flex flex-row gap-5 justify-center mb-auto text-xs sm:text-xl whitespace-nowrap'>
+              <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
+                <a href='https://alexpetrov.vercel.app/' target='blank'
+                  className='text-orange-300'>Artist Portfolio</a>
+                <img src='/link.svg' className='size-3' />
+              </div>
+              <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
+                <a href='https://github.com/Keymor/3D-portfolio' target='blank'
+                  className='text-orange-300'>GitHub</a>
+                <img src='/link.svg' className='size-3' />
+              </div>
+            </div>
+          </div>
           <img src='/devil.svg' className=' relative mx-auto sm:mx-0 sm:size-full z-1' />
+          <img style={{ visibility: hover2 || hoverMob2 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[20%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
           <img src='/tail.svg' className='absolute left-12/20 top-19/20 inset-0 scale-100 sm:scale-180 -scale-x-100 sm:-scale-x-180 rotate-50 z-0' />
-          <img style={{ visibility: hover2 ? 'visible' : 'hidden' }} src='/eyes.svg' className='w-4/10 absolute top-[15%] left-1/2 -translate-x-1/2 blink delay-300 z-2' />
-          <h1 style={{ visibility: hover2 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 2</h1>
+          <h1 style={{ visibility: hover2 || hoverMob2 ? 'hidden' : 'visible' }} className='w-full absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 text-5xl sm:text-7xl font-bold whitespace-nowrap z-2'>PROJECT 2</h1>
         </div>
       </motion.div>
       <Skills />

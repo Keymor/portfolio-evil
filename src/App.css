@@ -41,6 +41,39 @@ body {
   animation: flameIdle 3.5s linear infinite;
 }
 
+.evilUpp {
+  animation: popUp 2s linear forwards;
+}
+
+@keyframes upp {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+@keyframes popUp {
+  0% {
+    display: flex;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
 @keyframes shifting {
   0% {
     right: 1080px;
