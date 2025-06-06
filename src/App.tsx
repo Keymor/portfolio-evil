@@ -125,7 +125,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <p style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='text-red-800 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>
+            <p style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='text-amber-100 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>
               Nihon-Go is a modern Japanese learning web app for practicing Kana, Kanji, and vocabulary with progress tracking.
             </p>
             <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }}
@@ -139,12 +139,12 @@ function App() {
             <div className='flex flex-row gap-5 justify-center mb-auto text-xs sm:text-xl whitespace-nowrap'>
               <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
                 <a href='https://nihongo-learning.up.railway.app/' target='blank'
-                  className='text-orange-300'>Nihon Go learning</a>
+                  className='text-orange-200'>Nihon Go learning</a>
                 <img src='/link.svg' className='size-3' />
               </div>
               <div style={{ animation: hover1 || hoverMob1 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
                 <a href='https://github.com/Keymor/nihon-go-learning' target='blank'
-                  className='text-orange-300'>GitHub</a>
+                  className='text-orange-200'>GitHub</a>
                 <img src='/link.svg' className='size-3' />
               </div>
             </div>
@@ -165,7 +165,7 @@ function App() {
             <div style={{ animation: hover2 ? 'popUp 2s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2 z-19'>
               <img src='/alexLogo.svg' className='size-110'/>
             </div>
-            <p style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='text-red-800 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>
+            <p style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='text-amber-100 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto'>
               Alex Petrov’s portfolio is a showcase. It features a responsive landing page. Email friendly API integration.
             </p>
             <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }}
@@ -178,12 +178,12 @@ function App() {
             <div className='flex flex-row gap-5 justify-center mb-auto text-xs sm:text-xl whitespace-nowrap'>
               <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
                 <a href='https://alexpetrov.vercel.app/' target='blank'
-                  className='text-orange-300'>Artist Portfolio</a>
+                  className='text-orange-200'>Artist Portfolio</a>
                 <img src='/link.svg' className='size-3' />
               </div>
               <div style={{ animation: hover2 || hoverMob2 ? 'upp 2.2s linear forwards' : '' }} className='py-2 pl-2 sm:pl-4 pr-2 w-fit bg-red-800 rounded-full mb-auto'>
                 <a href='https://github.com/Keymor/3D-portfolio' target='blank'
-                  className='text-orange-300'>GitHub</a>
+                  className='text-orange-200'>GitHub</a>
                 <img src='/link.svg' className='size-3' />
               </div>
             </div>
