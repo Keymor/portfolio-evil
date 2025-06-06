@@ -14,18 +14,22 @@ function App() {
   const [hoverMob1, setHoverMob1] = useState(false)
   const [hoverMob2, setHoverMob2] = useState(false)
 
-  const sizeUpOne = () => {
+  const sizeUpOne = (action: string) => {
     if (window.innerWidth > 650) {
-      setHover1(!hover1)
+      action === 'leave' ? 
+      setHover1(false) :
+      setHover1(true)
     } else {
       setHover1(!hover1)
       setHoverMob1(!hoverMob1)
     }
   }
 
-  const sizeUpTwo = () => {
+  const sizeUpTwo = (action: string) => {
     if (window.innerWidth > 650) {
-      setHover2(!hover2)
+      action === 'leave' ? 
+      setHover2(false) :
+      setHover2(true)
     } else {
       setHover2(!hover2)
       setHoverMob2(!hoverMob2)
@@ -106,8 +110,8 @@ function App() {
           //   repeat: 3
           // }}
           style={{ scale: hoverMob1 ? 1.7 : '', zIndex: hoverMob1 ? 11 : 10 }}
-          onMouseEnter={() => sizeUpOne()}
-          onMouseLeave={() => sizeUpOne()}
+          onMouseEnter={() => sizeUpOne('no')}
+          onMouseLeave={() => sizeUpOne('leave')}
           className='text-center sm:w-4/10 size-fit z-10 relative lg:hover:scale-140 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div
             style={{ visibility: hover1 || hoverMob1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }}
@@ -150,8 +154,8 @@ function App() {
         </div>
         <div
           style={{ scale: hoverMob2 ? 1.7 : '', zIndex: hoverMob2 ? 11 : 10 }}
-          onMouseEnter={() => sizeUpTwo()}
-          onMouseLeave={() => sizeUpTwo()}
+          onMouseEnter={() => sizeUpTwo('no')}
+          onMouseLeave={() => sizeUpTwo('leave')}
           className='text-center sm:w-4/10 size-fit z-10 relative lg:hover:scale-140 duration-300 drop-shadow-[0px_10px_10px_rgba(0,0,0,0.5)]'>
           <div
             style={{ visibility: hover2 || hoverMob2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }}
