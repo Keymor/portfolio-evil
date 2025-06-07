@@ -116,7 +116,7 @@ function App() {
           <div
             style={{ visibility: hover1 || hoverMob1 ? 'visible' : 'hidden', opacity: hover1 ? 1 : 0 }}
             className='text-white gap-1 sm:gap-5 rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex flex-col duration-300 z-3'>
-            <div style={{ animation: hover1 ? 'popUp 0.8s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2'>
+            <div style={{ animation: hover1 || hoverMob1 ? 'popUp 0.8s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2'>
               <div className='scale-100 sm:scale-150 left-1/2 top-1/2 -translate-1/2 absolute flex size-20 rounded-full font-bold bg-red-800 text-amber-100 text-center z-19'>
                 <p className='m-auto text-2xl whitespace-nowrap -translate-x-2/12'>
                   日本語学習
@@ -160,7 +160,7 @@ function App() {
           <div
             style={{ visibility: hover2 || hoverMob2 ? 'visible' : 'hidden', opacity: hover2 ? 1 : 0 }}
             className='text-white gap-1 sm:gap-5 rounded-2xl w-9/10 h-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 flex flex-col duration-300 z-3'>
-            <div style={{ animation: hover2 ? 'popUp 0.8s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2 z-19'>
+            <div style={{ animation: hover2 || hoverMob2 ? 'popUp 0.8s linear forwards' : '' }} className='size-fit rounded-2xl mx-auto opacity-0 absolute inset-0 top-1/2 -translate-y-1/2 z-19'>
               <img src='/alexLogo.svg' className='size-110' />
             </div>
             <p style={{ animation: hover2 || hoverMob2 ? 'upp 1s linear forwards' : '' }} className='text-amber-100 text-xs sm:text-xl content-center text-center tracking-wide mt-auto w-[90%] mx-auto opacity-0'>
