@@ -100,13 +100,11 @@ function App() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className='w-fit text-white text-2xl font-bold text-shadow-md z-10 mx-auto mt-20 sm:my-40 px-3 lg:px-0'>
-        Full Stack developer, ex-Snapchat, artist and project manager.<br />
-        I have 7 years of experience in the biggest American company like Snapchat as a manager and an artist.<br />
-        I have strong project management and team communication.<br />
-        I was in charge of the most urgent task in my team.<br />
-        During working in Snap I was fully involved in a working process and<br />
-        was likely to do action with engen “lensStudio” with javaScript and some design parts.
+        className='w-fit text-white text-2xl sm:text-4xl font-bold text-shadow-md z-10 mx-auto mt-20 sm:my-40 px-3 lg:px-0 sm:leading-14 text-center'>
+        I can build interactive and performant web apps using React,<br/> 
+        Next.js, TypeScript, and Tailwind CSS, implement animations with Framer Motion,<br/> 
+        write tested and maintainable code with Vitest, and create modern,<br/> 
+        responsive web applications with a strong focus on user experience.
       </motion.p>
       {/* Works section */}
       <motion.h1
